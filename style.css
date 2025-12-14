@@ -1,79 +1,210 @@
-============================ -->
-width: 90%;
-max-width: 1100px;
-margin: auto;
-padding: 20px;
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-.nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
+/* ===== BASE ===== */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #1f2933;
+  line-height: 1.6;
 }
 
-
-.logo {
-color: #d4af37;
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-
-nav a {
-color: #d4af37;
-margin-left: 15px;
-text-decoration: none;
 }
 
+/* ===== HEADER ===== */
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+
+/* ===== LOGO (LOCKED SIZE) ===== */
+.site-logo {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
+/* ===== NAV ===== */
+.nav a {
+  color: #1f2933;
+  text-decoration: none;
+  margin-left: 24px;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #c9a24d;
+}
+
+/* ===== HERO ===== */
+.hero {
+  padding: 100px 0;
+  text-align: center;
+  background: #ffffff;
+}
 
 .hero {
-height: 70vh;
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
+  padding: 120px 0;
+  text-align: center;
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url("hero-bg.jpg") center / cover no-repeat;
 }
 
-
+/* ===== BUTTON ===== */
 .btn {
-background: #d4af37;
-color: #000;
-padding: 12px 25px;
-text-decoration: none;
-border: none;
-margin-top: 20px;
-cursor: pointer;
-display: inline-block;
+  display: inline-block;
+  background: #c9a24d;
+  color: #000;
+  padding: 14px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-
-.grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-gap: 20px;
+/* ===== CONTENT ===== */
+main,
+.content {
+  background: #ffffff;
+  padding: 80px 0;
 }
 
-
-.card {
-border: 1px solid #d4af37;
-padding: 20px;
-text-align: center;
+h1, h2, h3 {
+  color: #c9a24d;
+  margin-bottom: 16px;
 }
 
+p {
+  max-width: 750px;
+  margin-bottom: 16px;
+}
+
+/* ===== FORMS ===== */
+form {
+  max-width: 600px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  border-top: 1px solid #ddd;
+  padding: 24px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  background: #ffffff;
+}
+
+/* ===== LIST ALIGNMENT FIX ===== */
+
+ul {
+  padding-left: 20px;
+  margin-left: 0;
+}
+
+/* ===== VISUAL ALIGNMENT FIX ===== */
+
+/* Align header content with body text */
+.header-inner {
+  padding-left: 32px;
+  padding-right: 24px;
+}
+
+/* Match body content */
+.container {
+  padding-left: 32px;
+  padding-right: 24px;
+}
+
+/* ===== MOBILE OPTIMIZATION ===== */
+
+.hero-sub {
+  max-width: 700px;
+  margin: 0 auto 32px;
+  font-size: 1.15rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid #c9a24d;
+  color: #c9a24d;
+}
+
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .value-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 64px 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .site-logo {
+    height: 60px;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+/* ===== STANDARD INNER PAGE BACKGROUND ===== */
 
 .content {
-min-height: 70vh;
-}
-
-
-form input, form textarea {
-width: 100%;
-padding: 10px;
-margin: 10px 0;
-}
-
-
-footer {
-text-align: center;
-padding: 20px;
-border-top: 1px solid #d4af37;
+  background:
+    linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)),
+    url("page-bg.jpg") center / cover no-repeat;
 }
