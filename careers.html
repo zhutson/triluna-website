@@ -37,22 +37,183 @@ gtag('config', 'G-W4Z3N9P19F');
 </header>
 
 
-Healthcare Jobs Nationwide
-Intro text
+<section class="content">
+  <div class="container">
+    <header class="page-header">
+      <h2>Healthcare Jobs Nationwide</h2>
+      <p class="lead">
+        Triluna Company LLC is recruiting licensed healthcare professionals for hospital and clinic
+        assignments across the United States. Review open roles and apply in minutes.
+      </p>
+    </header>
 
-[ Open Opportunities ]
-• RN
-• NP
-• CRNA
-• Allied Health
-[ Email CV callout ]
+    <div class="grid">
+      <!-- LEFT: Roles / Info -->
+      <div class="card">
+        <h3>Open Opportunities</h3>
+        <p>
+          We place clinicians in a range of settings. Current roles include:
+        </p>
 
-[ Apply Now ]
-Name
-Email
-Position
-Experience
-[ Submit Application ]
+        <ul class="role-list">
+          <li>
+            <strong>Registered Nurses (RN)</strong>
+            <span>Inpatient, outpatient, and specialty units</span>
+          </li>
+          <li>
+            <strong>Nurse Practitioners (NP)</strong>
+            <span>Primary care and specialty clinics</span>
+          </li>
+          <li>
+            <strong>CRNAs &amp; Anesthesia Providers</strong>
+            <span>Surgical centers and hospital-based anesthesia</span>
+          </li>
+          <li>
+            <strong>Allied Health Professionals</strong>
+            <span>Imaging, therapy, lab, and other clinical support roles</span>
+          </li>
+        </ul>
+
+        <div class="callout">
+          <h4>Prefer email?</h4>
+          <p>
+            Send your CV/resume to
+            <a href="mailto:info@trilunaco.com"><strong>info@trilunaco.com</strong></a>.
+          </p>
+        </div>
+      </div>
+
+      <!-- RIGHT: Application Form -->
+      <div class="card">
+        <h3>Apply Now</h3>
+        <p class="muted">
+          Complete the form below. We review applications on a rolling basis and follow up if there’s a match.
+        </p>
+
+        <form
+          action="https://formspree.io/f/xjknajzr"
+          method="POST"
+          aria-label="Healthcare Job Application Form"
+          class="form"
+        >
+          <div class="field">
+            <label for="app-name">Full Name</label>
+            <input
+              id="app-name"
+              type="text"
+              name="name"
+              placeholder="Jane Doe"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="app-email">Email</label>
+            <input
+              id="app-email"
+              type="email"
+              name="email"
+              placeholder="jane@email.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="app-position">Position Applying For</label>
+            <input
+              id="app-position"
+              type="text"
+              name="position"
+              placeholder="RN, NP, CRNA, Allied Health"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="app-message">Brief Experience Summary</label>
+            <textarea
+              id="app-message"
+              name="message"
+              placeholder="Specialty, years of experience, preferred location(s), availability"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-block">Submit Application</button>
+
+          <p class="form-note">
+            By submitting, you agree to be contacted by Triluna Company LLC about staffing opportunities.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightweight, readable styling (safe to paste on the same page). Move to your CSS file if preferred. -->
+  <style>
+    .page-header { margin-bottom: 1.25rem; }
+    .lead { max-width: 70ch; line-height: 1.6; margin-top: 0.5rem; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 1.25rem;
+      align-items: start;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 12px;
+      padding: 1.25rem;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+    }
+
+    .muted { opacity: 0.85; line-height: 1.6; }
+
+    .role-list { padding-left: 1.1rem; margin: 0.75rem 0 0; }
+    .role-list li { margin: 0.7rem 0; }
+    .role-list span { display: block; margin-top: 0.2rem; opacity: 0.85; }
+
+    .callout {
+      margin-top: 1rem;
+      padding: 0.9rem 1rem;
+      border-radius: 10px;
+      background: rgba(0,0,0,0.03);
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .callout h4 { margin: 0 0 0.25rem; font-size: 1rem; }
+
+    .form { margin-top: 0.75rem; }
+    .field { margin-bottom: 0.85rem; }
+    label { display: block; font-weight: 600; margin-bottom: 0.35rem; }
+
+    input, textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.7rem 0.8rem;
+      border-radius: 10px;
+      border: 1px solid rgba(0,0,0,0.15);
+      background: #fff;
+      line-height: 1.4;
+    }
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: rgba(0,0,0,0.35);
+      box-shadow: 0 0 0 3px rgba(0,0,0,0.08);
+    }
+
+    .btn.btn-block { width: 100%; padding: 0.85rem 1rem; border-radius: 10px; }
+    .form-note { margin-top: 0.7rem; font-size: 0.9rem; opacity: 0.8; line-height: 1.5; }
+
+    @media (max-width: 860px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</section>
 
 
 <footer>
