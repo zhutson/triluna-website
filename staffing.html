@@ -37,23 +37,150 @@ gtag('config', 'G-W4Z3N9P19F');
 </header>
 
 
-<section class="content">
-<div class="container">
-<h2>Facility Staffing Request</h2>
-<p>Complete the form below and our team will contact you promptly.</p>
+<section class="content" aria-label="Facility staffing request form">
+  <div class="container">
+    <header class="page-header">
+      <h2>Request Healthcare Staffing for Your Facility</h2>
+      <p class="lead">
+        Triluna Company LLC supports <strong>hospitals</strong> and <strong>ambulatory surgical centers (ASCs)</strong>
+        with credentialed clinical professionals nationwide. Complete the form below and our team will contact you promptly.
+      </p>
+    </header>
 
+    <div class="grid single">
+      <div class="card">
+        <h3>Facility Staffing Request</h3>
+        <p class="muted">
+          For the fastest response, include the role(s) needed, start date, shift details, and any credentialing requirements.
+        </p>
 
-<form action="https://formspree.io/f/xjknajzr" method="POST">
-<input type="text" name="facility" placeholder="Facility Name" required>
-<input type="text" name="contact" placeholder="Contact Person" required>
-<input type="email" name="email" placeholder="Facility Email" required>
-<input type="text" name="role" placeholder="Position Needed (RN, NP, CRNA, etc.)" required>
-<input type="text" name="shift" placeholder="Shift / Coverage Type">
-<textarea name="details" placeholder="Additional Staffing Details"></textarea>
-<button type="submit" class="btn">Submit Staffing Request</button>
-</form>
-</div>
-</section>
+        <form
+          action="https://formspree.io/f/xjknajzr"
+          method="POST"
+          aria-label="Facility staffing request form"
+          class="form"
+        >
+          <div class="field">
+            <label for="facility-name">Facility Name</label>
+            <input
+              id="facility-name"
+              type="text"
+              name="facility"
+              placeholder="Facility Name"
+              autocomplete="organization"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="contact-person">Contact Person</label>
+            <input
+              id="contact-person"
+              type="text"
+              name="contact"
+              placeholder="Contact Person"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="facility-email">Facility Email</label>
+            <input
+              id="facility-email"
+              type="email"
+              name="email"
+              placeholder="Facility Email"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="position-needed">Position Needed</label>
+            <input
+              id="position-needed"
+              type="text"
+              name="role"
+              placeholder="Position Needed (RN, NP, CRNA, Allied Health, etc.)"
+              required
+            />
+          </div>
+
+          <div class="two-col">
+            <div class="field">
+              <label for="coverage-type">Shift / Coverage Type</label>
+              <input
+                id="coverage-type"
+                type="text"
+                name="shift"
+                placeholder="Day / Night / Weekend / Call / Per Diem"
+              />
+            </div>
+
+            <div class="field">
+              <label for="start-date">Preferred Start Date</label>
+              <input
+                id="start-date"
+                type="text"
+                name="start_date"
+                placeholder="MM/DD/YYYY (or ASAP)"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="staffing-details">Additional Staffing Details</label>
+            <textarea
+              id="staffing-details"
+              name="details"
+              placeholder="Facility type (Hospital/ASC), department, schedule, duration, credentialing requirements, location, and any special notes"
+              rows="6"
+              required
+            ></textarea>
+          </div>
+
+          <!-- Helpful hidden field for routing -->
+          <input type="hidden" name="source" value="Facility Staffing Request" />
+
+          <button type="submit" class="btn btn-block">Submit Staffing Request</button>
+
+          <p class="form-note">
+            By submitting, you agree to be contacted by Triluna Company LLC regarding your staffing request.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Styling consistent with your other forms/cards. Move to your CSS file if preferred. -->
+  <style>
+    .page-header { margin-bottom: 1.25rem; }
+    .lead { max-width: 75ch; line-height: 1.6; margin-top: 0.5rem; opacity: 0.95; }
+
+    .grid.single { display: grid; grid-template-columns: 1fr; }
+    .card {
+      background: #fff;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 14px;
+      padding: 1.25rem;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.05);
+    }
+
+    .muted { opacity: 0.85; line-height: 1.6; margin-top: 0.35rem; }
+
+    .form { margin-top: 0.9rem; }
+    .field { margin-bottom: 0.9rem; }
+    label { display: block; font-weight: 600; margin-bottom: 0.35rem; }
+
+    input, textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.72rem 0.85rem;
+      border-radius: 10px;
+      border: 1px solid rgba(0,0,0,0.15);
+      background: #fff;
+      line-h
 
 
 <footer>
