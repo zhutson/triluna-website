@@ -38,22 +38,123 @@ gtag('config', 'G-W4Z3N9P19F');
 
 
 <section class="content">
-<div class="container">
-<h2>Contact Us</h2>
-<form action="https://formspree.io/f/xjknajzr" method="POST">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message"></textarea>
-  <button type="submit" class="btn">Send Message</button>
-</form>
+  <div class="container">
+    <header class="page-header">
+      <h2>Contact Triluna Company LLC</h2>
+      <p class="lead">
+        Have a question about our healthcare staffing services or need staffing support for your clinic or hospital?
+        Send us a message and our team will respond as soon as possible.
+      </p>
+    </header>
 
-</div>
+    <div class="grid single">
+      <div class="card">
+        <h3>Send a Message</h3>
+        <p class="muted">
+          Please include your facility name (if applicable), the role(s) you need, location, and timing so we can help faster.
+        </p>
+
+        <form
+          action="https://formspree.io/f/xjknajzr"
+          method="POST"
+          aria-label="Contact form for Triluna Company LLC"
+          class="form"
+        >
+          <div class="field">
+            <label for="contact-name">Full Name</label>
+            <input
+              id="contact-name"
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="contact-email">Email</label>
+            <input
+              id="contact-email"
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="contact-message">Message</label>
+            <textarea
+              id="contact-message"
+              name="message"
+              placeholder="How can we help? (facility/clinic name, role(s), location, start date, schedule, and any requirements)"
+              rows="6"
+              required
+            ></textarea>
+          </div>
+
+          <!-- Optional hidden field to help route messages -->
+          <input type="hidden" name="source" value="Website Contact Form" />
+
+          <button type="submit" class="btn btn-block">Send Message</button>
+
+          <p class="form-note">
+            By submitting, you agree to be contacted by Triluna Company LLC regarding your inquiry.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Consistent styling to match the Join Our Team layout. Move into your main CSS if preferred. -->
+  <style>
+    .page-header { margin-bottom: 1.25rem; }
+    .lead { max-width: 70ch; line-height: 1.6; margin-top: 0.5rem; }
+
+    .grid.single { display: grid; grid-template-columns: 1fr; }
+
+    .card {
+      background: #fff;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 12px;
+      padding: 1.25rem;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+    }
+
+    .muted { opacity: 0.85; line-height: 1.6; }
+
+    .form { margin-top: 0.75rem; }
+    .field { margin-bottom: 0.85rem; }
+    label { display: block; font-weight: 600; margin-bottom: 0.35rem; }
+
+    input, textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.7rem 0.8rem;
+      border-radius: 10px;
+      border: 1px solid rgba(0,0,0,0.15);
+      background: #fff;
+      line-height: 1.4;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: rgba(0,0,0,0.35);
+      box-shadow: 0 0 0 3px rgba(0,0,0,0.08);
+    }
+
+    .btn.btn-block { width: 100%; padding: 0.85rem 1rem; border-radius: 10px; }
+
+    .form-note { margin-top: 0.7rem; font-size: 0.9rem; opacity: 0.8; line-height: 1.5; }
+  </style>
 </section>
 
 
 <footer>
   <div class="container">
-    <p>© 2025 Triluna Company LLC | 
+    <p>© 2026 Triluna Company LLC | 
       <a href="privacy.html">Privacy Policy</a> | 
       <a href="terms.html">Terms & Conditions</a>
     </p>
