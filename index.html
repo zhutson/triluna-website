@@ -40,58 +40,227 @@
   </div>
 </header>
 
-<main class="hero">
+<main class="hero" aria-label="Triluna healthcare staffing hero section">
   <div class="container">
-    <h1>Empowering Care. Illuminating Talent.</h1>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Healthcare Staffing for Hospitals &amp; Ambulatory Surgical Centers</p>
 
-    <p class="hero-sub">
-      Physician-owned healthcare staffing for Hospitals and Ambulatory Surgical Centers —
-      built by clinicians who understand the realities of modern practice.
-    </p>
+        <h1>Empowering Care. Illuminating Talent.</h1>
 
-    <div class="hero-actions">
-      <a href="staffing.html" class="btn">Request Staffing</a>
-      <a href="services.html" class="btn secondary">View Services</a>
+        <p class="hero-sub">
+          Triluna Company LLC delivers <strong>physician-led healthcare staffing</strong> for
+          <strong>hospitals</strong> and <strong>ambulatory surgical centers (ASCs)</strong>—built by clinicians
+          who understand staffing shortages, compliance, and the pace of modern care.
+        </p>
+
+        <ul class="hero-bullets" aria-label="Key benefits">
+          <li><strong>Credentialed clinicians</strong> ready to integrate into your care teams</li>
+          <li><strong>Responsive staffing support</strong> to protect coverage and patient safety</li>
+          <li><strong>Hospital &amp; ASC expertise</strong> across perioperative and inpatient workflows</li>
+        </ul>
+
+        <div class="hero-actions">
+          <a href="staffing.html" class="btn">Request Staffing</a>
+          <a href="services.html" class="btn secondary">View Services</a>
+        </div>
+
+        <p class="trust-note">
+          Trusted staffing support designed to strengthen care delivery and operational continuity.
+        </p>
+      </div>
+
+      <div class="hero-card" aria-label="Quick request card">
+        <h2 class="card-title">Need coverage fast?</h2>
+        <p class="card-sub">
+          Tell us your facility type, role(s), and timeframe. Our team will follow up quickly.
+        </p>
+
+        <div class="quick-links" role="list">
+          <a class="quick-link" href="staffing.html" role="listitem">
+            <span class="ql-title">Request Hospital Staffing</span>
+            <span class="ql-sub">RNs, NPs, anesthesia, allied health</span>
+          </a>
+
+          <a class="quick-link" href="staffing.html#asc" role="listitem">
+            <span class="ql-title">Request ASC Staffing</span>
+            <span class="ql-sub">Perioperative and procedure support</span>
+          </a>
+
+          <a class="quick-link" href="contact.html" role="listitem">
+            <span class="ql-title">Contact Recruiting</span>
+            <span class="ql-sub">Questions? We’re here to help</span>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
+
+  <style>
+    .hero { padding: 3rem 0; }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      opacity: 0.85;
+      margin: 0 0 0.75rem;
+    }
+
+    .hero h1 { margin: 0 0 0.75rem; line-height: 1.1; }
+    .hero-sub { max-width: 70ch; line-height: 1.7; margin: 0 0 1rem; opacity: 0.92; }
+
+    .hero-bullets {
+      margin: 0 0 1.25rem;
+      padding-left: 1.1rem;
+      line-height: 1.7;
+    }
+    .hero-bullets li { margin: 0.4rem 0; }
+
+    .hero-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.25rem; }
+    .trust-note { margin-top: 0.9rem; opacity: 0.85; line-height: 1.6; max-width: 70ch; }
+
+    .hero-card {
+      background: #fff;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 14px;
+      padding: 1.25rem;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+      position: sticky;
+      top: 1rem;
+    }
+
+    .card-title { margin: 0 0 0.35rem; font-size: 1.15rem; }
+    .card-sub { margin: 0 0 0.9rem; line-height: 1.6; opacity: 0.9; }
+
+    .quick-links { display: grid; gap: 0.6rem; }
+    .quick-link {
+      display: block;
+      padding: 0.85rem 0.9rem;
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,0.08);
+      background: rgba(0,0,0,0.02);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
+    }
+    .quick-link:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+      border-color: rgba(0,0,0,0.14);
+    }
+    .ql-title { display: block; font-weight: 700; margin-bottom: 0.15rem; }
+    .ql-sub { display: block; opacity: 0.85; line-height: 1.4; font-size: 0.95rem; }
+
+    @media (max-width: 980px) {
+      .hero { padding: 2.25rem 0; }
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-card { position: relative; top: auto; }
+    }
+  </style>
 </main>
 
-<section class="content">
+<section class="content" aria-label="Why Triluna healthcare staffing">
   <div class="container">
-    <h2>Why Triluna</h2>
+    <header class="section-header">
+      <h2>Why Triluna</h2>
+      <p class="section-sub">
+        A clinician-led staffing partner for hospitals and ASCs—built for quality, speed, and compliance.
+      </p>
+    </header>
 
     <div class="value-grid">
-      <div>
-        <h3>Physician-Owned</h3>
+      <article class="value-card">
+        <h3>Physician-Led</h3>
         <p>
-          Led by practicing physicians who understand clinical workflows,
-          staffing pressures, and patient safety requirements.
+          Physician-owned and guided by clinicians who understand patient safety, clinical workflows,
+          and the realities of staffing in modern healthcare environments.
         </p>
-      </div>
+      </article>
 
-      <div>
-        <h3>Hospital & ASC Focused</h3>
+      <article class="value-card">
+        <h3>Hospital &amp; ASC Focused</h3>
         <p>
-          Specialized staffing solutions for Hospitals and Ambulatory Surgical Centers,
-          ensuring seamless integration into perioperative and inpatient environments.
+          Purpose-built <strong>hospital staffing</strong> and <strong>ASC staffing solutions</strong> to support
+          perioperative, procedural, and inpatient teams with seamless integration.
         </p>
-      </div>
+      </article>
 
-      <div>
-        <h3>Reliable & Credentialed</h3>
+      <article class="value-card">
+        <h3>Credentialed &amp; Reliable</h3>
         <p>
-          Thoroughly vetted, licensed professionals you can trust —
-          delivered with responsiveness and accountability.
+          Thoroughly vetted, licensed professionals delivered with responsiveness and accountability—
+          so you can maintain coverage and continuity of care.
         </p>
-      </div>
+      </article>
+
+      <article class="value-card">
+        <h3>Quality + Compliance</h3>
+        <p>
+          A process built around credentialing, documentation, and readiness—helping facilities meet
+          operational standards and reduce onboarding friction.
+        </p>
+      </article>
+
+      <article class="value-card">
+        <h3>Fast, Clear Communication</h3>
+        <p>
+          Proactive updates, quick turnaround, and a partner mindset—so your staffing requests don’t
+          get stuck in a queue.
+        </p>
+      </article>
+
+      <article class="value-card">
+        <h3>Partnership Mindset</h3>
+        <p>
+          We focus on long-term relationships with facilities and clinicians to strengthen care teams,
+          reduce burnout, and improve staffing stability over time.
+        </p>
+      </article>
     </div>
   </div>
+
+  <style>
+    .section-header { margin-bottom: 1.25rem; }
+    .section-sub { max-width: 75ch; line-height: 1.6; opacity: 0.9; margin-top: 0.5rem; }
+
+    .value-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .value-card {
+      background: #fff;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 14px;
+      padding: 1.1rem;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.04);
+    }
+
+    .value-card h3 { margin: 0 0 0.4rem; font-size: 1.05rem; }
+    .value-card p { margin: 0; line-height: 1.65; opacity: 0.92; }
+
+    @media (max-width: 980px) {
+      .value-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </section>
+
 
 <footer>
   <div class="container">
     <p>
-      © 2025 Triluna Company LLC |
+      © 2026 Triluna Company LLC |
       <a href="privacy.html">Privacy Policy</a> |
       <a href="terms.html">Terms & Conditions</a>
     </p>
