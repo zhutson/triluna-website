@@ -50,6 +50,44 @@ body {
   color: #c9a24d;
 }
 
+/* ===== NAV BASE ===== */
+.nav a {
+  position: relative;
+  color: #1f2933;
+  text-decoration: none;
+  margin-left: 24px;
+  font-weight: 500;
+  padding-bottom: 6px;
+  transition: color 160ms ease;
+}
+
+.nav a:hover {
+  color: #c9a24d;
+}
+
+/* ===== ACTIVE PAGE (PREMIUM STYLE) ===== */
+.nav a[aria-current="page"] {
+  font-weight: 700;
+  color: #1f2933;
+}
+
+/* Gold underline bar */
+.nav a[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background-color: #c9a24d;
+  border-radius: 2px;
+}
+
+/* Optional: subtle hover animation on active link */
+.nav a[aria-current="page"]:hover::after {
+  opacity: 0.9;
+}
+
 /* ===== HERO ===== */
 .hero {
   padding: 120px 0;
