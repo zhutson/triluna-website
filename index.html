@@ -42,128 +42,136 @@
 
 <main class="hero" aria-label="Triluna healthcare staffing hero section">
   <div class="container">
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">Healthcare Staffing for Hospitals &amp; Ambulatory Surgical Centers</p>
+    <p class="eyebrow">Healthcare Staffing for Hospitals &amp; ASCs</p>
 
-        <h1>Empowering Care. Illuminating Talent.</h1>
+    <h1>Empowering Care. Illuminating Talent.</h1>
 
-        <p class="hero-sub">
-          Triluna Company LLC delivers <strong>physician-led healthcare staffing</strong> for
-          <strong>hospitals</strong> and <strong>ambulatory surgical centers (ASCs)</strong>—built by clinicians
-          who understand staffing shortages, compliance, and the pace of modern care.
-        </p>
+    <p class="hero-sub">
+      Triluna Company LLC provides <strong>physician-led healthcare staffing</strong> for
+      <strong>hospitals</strong> and <strong>ambulatory surgical centers</strong>—credentialed clinicians,
+      fast response, compliance-ready onboarding.
+    </p>
 
-        <ul class="hero-bullets" aria-label="Key benefits">
-          <li><strong>Credentialed clinicians</strong> ready to integrate into your care teams</li>
-          <li><strong>Responsive staffing support</strong> to protect coverage and patient safety</li>
-          <li><strong>Hospital &amp; ASC expertise</strong> across perioperative and inpatient workflows</li>
-        </ul>
+    <div class="hero-actions" aria-label="Primary actions">
+      <a href="staffing.html" class="btn">Request Staffing</a>
+      <a href="services.html" class="btn ghost">View Services</a>
+    </div>
 
-        <div class="hero-actions">
-          <a href="staffing.html" class="btn">Request Staffing</a>
-          <a href="services.html" class="btn secondary">View Services</a>
-        </div>
-
-        <p class="trust-note">
-          Trusted staffing support designed to strengthen care delivery and operational continuity.
-        </p>
-      </div>
-
-      <div class="hero-card" aria-label="Quick request card">
-        <h2 class="card-title">Need coverage fast?</h2>
-        <p class="card-sub">
-          Tell us your facility type, role(s), and timeframe. Our team will follow up quickly.
-        </p>
-
-        <div class="quick-links" role="list">
-          <a class="quick-link" href="staffing.html" role="listitem">
-            <span class="ql-title">Request Hospital Staffing</span>
-            <span class="ql-sub">RNs, NPs, anesthesia, allied health</span>
-          </a>
-
-          <a class="quick-link" href="staffing.html#asc" role="listitem">
-            <span class="ql-title">Request ASC Staffing</span>
-            <span class="ql-sub">Perioperative and procedure support</span>
-          </a>
-
-          <a class="quick-link" href="contact.html" role="listitem">
-            <span class="ql-title">Contact Recruiting</span>
-            <span class="ql-sub">Questions? We’re here to help</span>
-          </a>
-        </div>
-      </div>
+    <div class="chips" aria-label="Key staffing benefits">
+      <span class="chip">Credentialed clinicians</span>
+      <span class="chip">Hospital + ASC coverage</span>
+      <span class="chip">Physician-led support</span>
     </div>
   </div>
 
   <style>
-    .hero { padding: 3rem 0; }
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.25fr 0.75fr;
-      gap: 1.5rem;
-      align-items: start;
+    :root{
+      --text:#0b1220;
+      --muted:rgba(11,18,32,.72);
+      --line:rgba(11,18,32,.12);
+      --soft:rgba(11,18,32,.04);
+      --shadow:0 18px 45px rgba(11,18,32,.10);
+      --radius:999px;
     }
 
-    .eyebrow {
-      display: inline-block;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-      text-transform: uppercase;
-      font-size: 0.85rem;
-      opacity: 0.85;
-      margin: 0 0 0.75rem;
+    .container{
+      width:min(1100px, calc(100% - 2.5rem));
+      margin-inline:auto;
     }
 
-    .hero h1 { margin: 0 0 0.75rem; line-height: 1.1; }
-    .hero-sub { max-width: 70ch; line-height: 1.7; margin: 0 0 1rem; opacity: 0.92; }
-
-    .hero-bullets {
-      margin: 0 0 1.25rem;
-      padding-left: 1.1rem;
-      line-height: 1.7;
-    }
-    .hero-bullets li { margin: 0.4rem 0; }
-
-    .hero-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.25rem; }
-    .trust-note { margin-top: 0.9rem; opacity: 0.85; line-height: 1.6; max-width: 70ch; }
-
-    .hero-card {
-      background: #fff;
-      border: 1px solid rgba(0,0,0,0.08);
-      border-radius: 14px;
-      padding: 1.25rem;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.06);
-      position: sticky;
-      top: 1rem;
+    .hero{
+      position:relative;
+      padding:4.75rem 0 3.5rem;
+      color:var(--text);
+      background:
+        radial-gradient(900px 420px at 18% 10%, rgba(11,18,32,.05), transparent 60%),
+        radial-gradient(900px 420px at 82% 0%, rgba(11,18,32,.04), transparent 55%),
+        #fff;
+      overflow:hidden;
     }
 
-    .card-title { margin: 0 0 0.35rem; font-size: 1.15rem; }
-    .card-sub { margin: 0 0 0.9rem; line-height: 1.6; opacity: 0.9; }
-
-    .quick-links { display: grid; gap: 0.6rem; }
-    .quick-link {
-      display: block;
-      padding: 0.85rem 0.9rem;
-      border-radius: 12px;
-      border: 1px solid rgba(0,0,0,0.08);
-      background: rgba(0,0,0,0.02);
-      text-decoration: none;
-      color: inherit;
-      transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
+    .eyebrow{
+      margin:0 0 .9rem;
+      font-size:.82rem;
+      letter-spacing:.09em;
+      text-transform:uppercase;
+      font-weight:800;
+      color:var(--muted);
     }
-    .quick-link:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 8px 18px rgba(0,0,0,0.06);
-      border-color: rgba(0,0,0,0.14);
-    }
-    .ql-title { display: block; font-weight: 700; margin-bottom: 0.15rem; }
-    .ql-sub { display: block; opacity: 0.85; line-height: 1.4; font-size: 0.95rem; }
 
-    @media (max-width: 980px) {
-      .hero { padding: 2.25rem 0; }
-      .hero-grid { grid-template-columns: 1fr; }
-      .hero-card { position: relative; top: auto; }
+    .hero h1{
+      margin:0 0 1.15rem;
+      line-height:1.04;
+      font-size:clamp(2.25rem, 3.3vw, 3.15rem);
+      letter-spacing:-0.03em;
+    }
+
+    .hero-sub{
+      margin:0 0 1.6rem;
+      max-width:64ch;
+      line-height:1.75;
+      font-size:1.06rem;
+      color:var(--muted);
+    }
+
+    .hero-actions{
+      display:flex;
+      gap:.8rem;
+      flex-wrap:wrap;
+      margin:0 0 1.4rem;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:.9rem 1.15rem;
+      border-radius:var(--radius);
+      font-weight:800;
+      text-decoration:none;
+      border:1px solid var(--text);
+      background:var(--text);
+      color:#fff;
+      box-shadow:0 12px 28px rgba(11,18,32,.14);
+      transition:transform 140ms ease, box-shadow 140ms ease, background 140ms ease;
+    }
+    .btn:hover{
+      transform:translateY(-1px);
+      box-shadow:0 16px 34px rgba(11,18,32,.18);
+    }
+
+    .btn.ghost{
+      background:transparent;
+      color:var(--text);
+      box-shadow:none;
+    }
+    .btn.ghost:hover{
+      background:rgba(11,18,32,.04);
+      box-shadow:none;
+    }
+
+    .chips{
+      display:flex;
+      gap:.6rem;
+      flex-wrap:wrap;
+      margin:0;
+    }
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      padding:.55rem .8rem;
+      border-radius:var(--radius);
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.75);
+      backdrop-filter:saturate(160%) blur(6px);
+      color:rgba(11,18,32,.82);
+      font-weight:700;
+      font-size:.92rem;
+    }
+
+    @media(max-width:900px){
+      .hero{ padding:3.5rem 0 2.75rem; }
+      .hero-sub{ font-size:1.02rem; }
     }
   </style>
 </main>
@@ -173,85 +181,91 @@
     <header class="section-header">
       <h2>Why Triluna</h2>
       <p class="section-sub">
-        A clinician-led staffing partner for hospitals and ASCs—built for quality, speed, and compliance.
+        Clinician-led staffing for hospitals and ASCs—built for quality, speed, and compliance.
       </p>
     </header>
 
     <div class="value-grid">
       <article class="value-card">
         <h3>Physician-Led</h3>
-        <p>
-          Physician-owned and guided by clinicians who understand patient safety, clinical workflows,
-          and the realities of staffing in modern healthcare environments.
-        </p>
+        <p>Clinician-guided staffing built around patient safety and workflow.</p>
       </article>
 
       <article class="value-card">
-        <h3>Hospital &amp; ASC Focused</h3>
-        <p>
-          Purpose-built <strong>hospital staffing</strong> and <strong>ASC staffing solutions</strong> to support
-          perioperative, procedural, and inpatient teams with seamless integration.
-        </p>
+        <h3>Hospital &amp; ASC Focus</h3>
+        <p>Coverage for perioperative, procedural, and inpatient teams.</p>
       </article>
 
       <article class="value-card">
-        <h3>Credentialed &amp; Reliable</h3>
-        <p>
-          Thoroughly vetted, licensed professionals delivered with responsiveness and accountability—
-          so you can maintain coverage and continuity of care.
-        </p>
+        <h3>Credentialed</h3>
+        <p>Vetted, licensed professionals ready to integrate quickly.</p>
       </article>
 
       <article class="value-card">
-        <h3>Quality + Compliance</h3>
-        <p>
-          A process built around credentialing, documentation, and readiness—helping facilities meet
-          operational standards and reduce onboarding friction.
-        </p>
+        <h3>Compliance-Ready</h3>
+        <p>Credentialing + documentation designed to reduce friction.</p>
       </article>
 
       <article class="value-card">
-        <h3>Fast, Clear Communication</h3>
-        <p>
-          Proactive updates, quick turnaround, and a partner mindset—so your staffing requests don’t
-          get stuck in a queue.
-        </p>
+        <h3>Fast Response</h3>
+        <p>Clear updates and rapid turnaround—no staffing limbo.</p>
       </article>
 
       <article class="value-card">
-        <h3>Partnership Mindset</h3>
-        <p>
-          We focus on long-term relationships with facilities and clinicians to strengthen care teams,
-          reduce burnout, and improve staffing stability over time.
-        </p>
+        <h3>Partner Mindset</h3>
+        <p>Long-term relationships that strengthen care teams.</p>
       </article>
     </div>
   </div>
 
   <style>
-    .section-header { margin-bottom: 1.25rem; }
-    .section-sub { max-width: 75ch; line-height: 1.6; opacity: 0.9; margin-top: 0.5rem; }
-
-    .value-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1rem;
-      margin-top: 1rem;
+    .content{
+      padding:3.25rem 0;
+      background:rgba(11,18,32,.02);
+      border-top:1px solid rgba(11,18,32,.06);
     }
 
-    .value-card {
-      background: #fff;
-      border: 1px solid rgba(0,0,0,0.08);
-      border-radius: 14px;
-      padding: 1.1rem;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.04);
+    .section-header h2{
+      margin:0;
+      font-size:1.65rem;
+      letter-spacing:-0.01em;
     }
 
-    .value-card h3 { margin: 0 0 0.4rem; font-size: 1.05rem; }
-    .value-card p { margin: 0; line-height: 1.65; opacity: 0.92; }
+    .section-sub{
+      margin:.6rem 0 1.4rem;
+      max-width:72ch;
+      color:rgba(11,18,32,.72);
+      line-height:1.65;
+    }
 
-    @media (max-width: 980px) {
-      .value-grid { grid-template-columns: 1fr; }
+    .value-grid{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0, 1fr));
+      gap:1rem;
+    }
+
+    .value-card{
+      background:#fff;
+      border:1px solid rgba(11,18,32,.10);
+      border-radius:16px;
+      padding:1.15rem;
+      box-shadow:0 10px 26px rgba(11,18,32,.06);
+    }
+
+    .value-card h3{
+      margin:0 0 .35rem;
+      font-size:1.05rem;
+      letter-spacing:-0.01em;
+    }
+
+    .value-card p{
+      margin:0;
+      color:rgba(11,18,32,.72);
+      line-height:1.6;
+    }
+
+    @media(max-width:900px){
+      .value-grid{ grid-template-columns:1fr; }
     }
   </style>
 </section>
